@@ -49,7 +49,7 @@
 
     可修改需要爬取的页数,如:urls = spider.get_index_urls(1,3) , 可获取1到3页的贴子图片
 
-    运行Run_Hupu,输入版块名称即可
+    运行Run_Hupu.py,输入版块名称即可
     
 
 
