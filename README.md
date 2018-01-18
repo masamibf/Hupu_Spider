@@ -2,11 +2,9 @@
 
 1.功能:爬取虎扑社区图片并保存到本地
 
-2.文件 '爆照区' 和 '这妹子真漂亮' 中为该程序爬取的少量图片
+2.程序包含Spider_Hupu.py和Run_Hupu.py  我的运行环境是 windows10 64位 以及 python3.6
 
-3.程序包含Spider_Hupu.py和Run_Hupu.py  我的运行环境是 windows10 64位 以及 python3.6
-
-4.可以爬取的版块见 Spider_Hupu.py中 
+3.可以爬取的版块见 Spider_Hupu.py中 
 	CONFIG_DICT = {
                    '爆照区':'selfie',
                    '这妹子真漂亮':'beauty',
@@ -19,9 +17,9 @@
 
     可自己添加版块名称 至 CONFIG_DICT 中 ,字典的value为版块url末尾的字母.
 
-5.图片的保存路径可在Spider_Hupu中修改 dir 变量
+4.图片的保存路径可在Spider_Hupu中修改 dir 变量
 
-6.需要安装的python库有:
+5.需要安装的python库有:
 	 requests
 	 re
 	 os
@@ -30,7 +28,7 @@
 	 lxml
 	 multiprocessing
 
-7.使用方法
+6.使用方法
 	
 	if __name__ == '__main__':
     community = input('请 输 入 板 块 名 称: ')
