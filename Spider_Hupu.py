@@ -96,7 +96,7 @@ class Spider_Hupu():
     def save_image(self,name,title, content,formats):
         """保存图片   文件夹名称,子文件名称,图片数据,图片格式"""
         global dir
-        dir_name = 'dir + name + '\\' + title
+        dir_name = dir + name + '\\' + title
         if not os.path.exists(dir_name):
             os.makedirs(dir_name)  # 如果不存在则新建文件夹
         img_path = os.path.join(dir_name, "%s.%s" % (md5(content).hexdigest(), formats))
